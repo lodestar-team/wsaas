@@ -26,6 +26,6 @@ GATEWAY_CONFIG=./config.toml cargo run --release -p ws-gateway
 ```
 wss://<gateway>/ws/{chain}/{topic}?receipt=<url-encoded EIP-712 TAP receipt>
 ```
-e.g. `/ws/eth/transfers`, `/ws/solana/swaps`. No receipt → 400/402.
+e.g. `/ws/eth/erc20_transfers`, `/ws/eth/swaps`, `/ws/solana/swaps`, `/ws/solana/spl_transfer`. (Valid Pinax topics — `transfers` is **not** one.) No receipt → 400/402.
 
 > Community implementation. Not audited.
