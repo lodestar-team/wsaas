@@ -1,0 +1,25 @@
+# Rust
+target/
+Cargo.lock
+
+# Foundry
+out/
+cache/
+broadcast/
+lib/
+*.abi
+
+# Node
+node_modules/
+dist/
+indexer-agent/dist/
+
+# Config / secrets
+.env
+.env.local
+*.env
+config.toml
+gateway.toml
+
+# OS
+.DS_Store
